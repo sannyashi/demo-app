@@ -1,0 +1,16 @@
+version: 0.2
+phases:
+  install:
+    commands:
+      - echo "Installing dependencies..."
+      - npm install
+  build:
+    commands:
+      - echo "Building the application..."
+  post_build:
+    commands:
+      - echo "Zipping files for deployment..."
+      - zip -r my-static-app.zip .
+artifacts:
+  files:
+    - my-static-app.zip
