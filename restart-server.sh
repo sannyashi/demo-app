@@ -1,4 +1,4 @@
 #!/bin/bash
-cd /var/www/my-static-app
+cd /var/www/demo-app
 npm install
-pm2 restart app.js || pm2 start app.js
+pm2 restart index.js || pm2 start index.js
