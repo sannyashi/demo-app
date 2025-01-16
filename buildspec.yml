@@ -10,7 +10,7 @@ phases:
   post_build:
     commands:
       - echo "Zipping files for deployment..."
-      - zip -r my-static-app.zip .
+      - zip -r demo-app.zip .
 artifacts:
   files:
-    - my-static-app.zip
+    - demo-app.zip
