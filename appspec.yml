@@ -1,0 +1,10 @@
+version: 0.0
+os: linux
+files:
+  - source: /
+    destination: /var/www/demo-app
+hooks:
+  AfterInstall:
+    - location: scripts/restart-server.sh
+      timeout: 300
+      runas: root
